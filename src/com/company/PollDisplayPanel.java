@@ -96,22 +96,21 @@ public class PollDisplayPanel extends JPanel
 
             fromDegree+=degrees;
             g.setColor(Color.BLUE);
-            degrees = countToDegrees(count2 + fromDegree, total);
+            degrees = countToDegrees(count2, total);
             drawSector(g, x, y, r, fromDegree, degrees);
 
+            fromDegree+=degrees;
             g.setColor(Color.GREEN);
             degrees = Math.max(360-fromDegree, 0);
             drawSector(g, x, y, r, fromDegree, degrees);
 
-            System.out.println(fromDegree);
-            System.out.println(degrees);
 
 
 
         }
         else
         {
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.WHITE);
             drawSector(g, x, y, r, fromDegree, 360);
         }
     }
