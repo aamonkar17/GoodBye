@@ -110,7 +110,7 @@ public class PollDisplayPanel extends JPanel
         }
         else
         {
-            g.setColor(Color.WHITE);
+            g.setColor(Color.LIGHT_GRAY);
             drawSector(g, x, y, r, fromDegree, 360);
         }
     }
